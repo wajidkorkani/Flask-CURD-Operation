@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask CURD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/users">Users</a>
+        <a href="/user-form">Add User</a>
+    </nav>
     <h1>{{ title }}</h1>
 </body>
 </html>
