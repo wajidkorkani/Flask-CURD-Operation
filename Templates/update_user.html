@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='user_form.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/users">Users</a>
+        <a href="/user-form">Add User</a>
+    </nav>
+    <br><br>
+    <form action="/update-user" method="post">
+        <input type="text" name="id" placeholder="Enter ID" value="{{ user.id }}" readonly hidden>
+        <input type="text" name="username" value="{{ user.username }}" placeholder="Enter Username">
+        <input type="text" name="name" value="{{ user.name }}" placeholder="Enter Name">
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
