@@ -1,3 +1,7 @@
+*{
+    font-family: monospace;
+}
+
 nav{
     height: 100px;
     background-color: #333;
