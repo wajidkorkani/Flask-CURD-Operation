@@ -1,3 +1,7 @@
+*{
+    font-family: monospace;
+}
+
 nav{
     height: 100px;
     background-color: #333;
@@ -11,4 +15,37 @@ nav{
 a{
     color: white;
     text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+}
+
+table a{
+    text-decoration: none;
+    color: black;
+}
+
+th{
+    border: 3px solid #333;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
 }
