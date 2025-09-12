@@ -19,7 +19,8 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return render('index.html', title='Hello flask!')
+    users = User.query.all()
+    return render('index.html', users=users)
 
 
 @app.route('/add_user', methods=['POST'])
@@ -37,11 +38,6 @@ def add_user():
 @app.route("/user-form")
 def user_form():
     return render('user_form.html')
-
-@app.route('/users')
-def list_users():
-    users = User.query.all()
-    return render('users.html', users=users)
 
 @app.route('/delete-user-<int:id>')
 def delete_user(id):
